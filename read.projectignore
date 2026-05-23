@@ -1,0 +1,105 @@
+[PROJECT_INFO]
+     _                      _                 ____ _     ___
+    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+ /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+                |___/
+
+Angular CLI       : 21.2.11
+Angular           : 21.2.13
+Node.js           : 22.22.3
+Package Manager   : npm 10.9.8
+Operating System  : win32 x64
+--------------------------------------------------------------
+SSR + PrimeNG + Tailwind CSS v4.0
+
+[TREE_IGNORE]
+
+.git
+.angular
+.vscode
+node_modules
+dist
+coverage
+public
+.next
+.nuxt
+.storybook
+.cache
+.idea
+.vercel
+firebase-debug.log
+
+[CONTENT_IGNORE]
+
+# Images
+.png
+.jpg
+.jpeg
+.svg
+.webp
+.ico
+.gif
+.bmp
+
+# Fonts
+.ttf
+.otf
+.woff
+.woff2
+.eot
+
+# Archives
+.zip
+.rar
+.7z
+.tar
+.gz
+
+# Videos
+.mp4
+.mov
+.avi
+.webm
+
+# Audio
+.mp3
+.wav
+
+# Test Files
+.spec.ts
+.test.ts
+
+# Build Output
+.min.js
+.min.css
+
+# Generated Files
+README.md
+project-Info.md
+
+# Lock Files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+bun.lockb
+
+# Environment
+.env
+.env.local
+.env.production
+.env.development
+
+# Python
+__pycache__
+.pyc
+.pyo
+
+# Logs
+.log
+
+# Certificates
+.pem
+.crt
+.key
