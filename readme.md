@@ -29,7 +29,36 @@ pip install chardet
 python .\main.py
 ```
 
-A folder picker will open — select your project folder and `project-Info.md` will be generated in the same directory as `main.py`.
+A folder picker will open — select your project folder and `project-Info.md` will be generated in the **current working directory**.
+
+---
+
+## Build .exe
+
+**1. Install PyInstaller**
+```bash
+pip install pyinstaller
+```
+
+**2. Build**
+```bash
+pyinstaller --onefile --windowed --icon=read-project-md.ico --name="read-project-md" main.py
+```
+
+The `.exe` will be in the `dist/` folder after building.
+
+> If `pyinstaller` is not recognized, use `python -m PyInstaller` instead.
+
+**3. Run**
+
+Double-click `read-project-md.exe` or run it from any folder — `project-Info.md` will be saved in the folder you run it from.
+
+| Flag | Description |
+|---|---|
+| `--onefile` | Packages everything into a single `.exe` |
+| `--windowed` | Hides the terminal window |
+| `--icon` | Sets the `.exe` icon (must be `.ico` format) |
+| `--name` | Sets the output filename |
 
 ---
 
@@ -37,7 +66,8 @@ A folder picker will open — select your project folder and `project-Info.md` w
 
 1. Copy `read.projectignore` into your project root
 2. Edit the `[PROJECT_INFO]` section with your project details
-3. Run `main.py` and select that project folder
+3. Run `main.py` or `read-project-md.exe` and select that project folder
+4. A toast notification will confirm success or show an error
 
 ---
 
@@ -47,6 +77,7 @@ A folder picker will open — select your project folder and `project-Info.md` w
 |---|---|
 | `main.py` | Main script — run this |
 | `read.projectignore` | Config file — place this in your project root |
+| `read-project-md.ico` | Icon used for the `.exe` build |
 | `project-Info.md` | Generated output |
 
 ---
